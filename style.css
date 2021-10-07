@@ -1,0 +1,211 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+body{
+    background-color: rgb(29, 20, 61);
+}
+div.margin,footer{
+    
+    color:rgb(255, 255, 255);
+    padding: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin-bottom:10px;
+}
+div#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.seats{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center;      */
+    /* position: relative; */
+}
+
+div#seats{
+    width: 80vw;   
+}
+div#Screen{
+    border-style:solid;
+    border-color:rgb(109, 109, 255);
+     
+    background-color: white;
+    height: 100px;
+    width:30%;
+    margin-top:0px;
+    box-shadow:0 3px 10px rgba(255, 255, 255, 0.7);
+    margin-left:27vw;
+    
+}
+button[id="submit"]
+{
+    background-color:rgb(7, 7, 7);
+    color:white;
+    font-weight:bolder;
+    padding:5px;
+    border-color: white;
+    border-style:solid;
+    border-radius: 5px;
+    cursor:crosshair;
+    margin-top:50px;
+    margin-left:70vw;
+    height:50px;
+    width:150px;
+    
+}
+button[id="submit"]:hover{
+    background-color: rgb(253, 253, 253);
+    color:black;
+    border-width: 3px;
+    border-color:black;
+    cursor:pointer;
+}
+
+div[status="Normal"],[status="VIP"],[status="Executive"]{
+    height:20px;
+    width:20px;
+    color:aquamarine;
+    border:rgb(228, 224, 216);
+    border-style:solid;
+    border-width: 1px;
+    margin: 15px;
+    padding:6px;
+    font-family: monospace;
+}
+
+div.seat[status="Normal"]:nth-of-type(1)
+{
+    margin-left:5%;
+   
+}
+div.seat[status="Executive"]:nth-of-type(1)
+{
+    margin-left:3%;
+   
+}
+div.seat[status="VIP"]:nth-of-type(1)
+{
+    margin-left:33.3345%;
+   
+}
+div[status="Normal"]:nth-of-type(15)
+{
+    margin-left: 100px;
+}
+div[status="Executive"]:nth-of-type(15)
+{
+    margin-left: 100px;
+}
+
+div.seat{
+    margin:2px;
+    display: flex;
+    grid-template-columns:minmax(50px,2fr);
+
+}
+[status="Normal"]:hover{
+    background-color: rgb(248, 248, 247);
+    cursor:pointer;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+}
+[status="Executive"]:hover{
+    background-color: aquamarine;
+    /* border-width: 2px; */
+    color:black;
+    cursor:pointer;
+    font-weight: 500;
+    
+}
+[status="VIP"]:hover{
+   background-color: aquamarine;
+   /* border-width: 2px; */
+   color:black;
+   cursor:pointer;
+   font-weight: 500;
+}
+
+div[class="seat occupied"]
+{
+    background-color: rgb(97, 98, 99);
+    color:rgb(97,98,99);
+    border-color: rgb(97,98,99);
+}
+div[class="seat occupied"]:hover
+{
+    background-color: rgb(97, 98, 99);
+    color:rgb(97,98,99);
+    border-color: rgb(97,98,99);
+    cursor: not-allowed;
+}
+div[class="seat selected"]
+{
+    background-color: rgb(255, 255, 255);
+    /* border-width: 2px; */
+    color:black;
+    cursor:crosshair;
+    font-weight: 1000;
+    cursor:default;
+}
+div[class="seat selected"]:hover
+{
+    background-color: aquamarine;
+    /* border-width: 2px; */
+    color:black;
+    cursor:crosshair;
+    font-weight: 1000;
+    cursor:default;
+}
+div[id="select movie"],div[id="guide"]{
+    margin: 20px;
+    margin-left:33vw;
+    margin-right:33vw;
+    /* border-color: black; */
+    /* border-style:solid; */
+    padding:15px;
+    border-radius: 15px;
+    color:white;
+    background-color: rgb(21, 10, 10);   
+    font-weight: bolder;
+}
+div[id="guide"]
+{
+    display: flex;
+    padding:15px;
+    margin-right:40vw;
+    margin-left:40vw;
+}
+div[id="guide"]:hover
+{
+    
+    cursor:default ;
+    
+}
+div[id="Ex"]
+{
+    color:aquamarine;
+    border:rgb(228, 224, 216);
+    background-color: rgb(29, 20, 61);
+}
+div[id="Ex"]:hover
+{
+    color:aquamarine;
+    cursor:default ;   
+    background-color: rgb(29, 20, 61);
+}
+div[id="non"]:hover{
+    background-color: rgb(97, 98, 99);
+    color:rgb(97,98,99);
+    border-color: rgb(97,98,99);
+    cursor: not-allowed;
+}
+small{
+    margin-top:10px;
+    margin-left:7px;
+}
+select:hover{
+    cursor: pointer;
+}
