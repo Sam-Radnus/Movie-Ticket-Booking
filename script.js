@@ -98,3 +98,20 @@ window.onbeforeunload=function()
 {
      return "changes you have made may not be saved";
 }
+$('input[type="radio"]').on('change',function()
+{
+     let x=this.value;
+     let y=$('label[id="change"]');
+     y.html(x+" Number");
+     $('input[id="pin1"]').attr("placeholder","Enter "+x+" Number");
+});
+$('button[id="submit"]').on('click',function(e)
+{
+     e.preventDefault();
+    
+    console.log($('div[class="modal"]'));
+    $('body').css("background-color","black"); 
+    $('body').css("opacity","0.5"); 
+    $('div[class="modal"]').css("visibility","visible");
+
+});
