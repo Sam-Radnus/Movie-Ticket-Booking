@@ -28,25 +28,7 @@
         <div class="seat" status="Normal" id="Ex"></div><small>:available</small>
         <div class="seat occupied" status="Normal" id="non"></div><small>:not available</small>
      </div>
-<div class="modal-bg">
-    <div class="modal">
-        <div>
-             <label>Name:</label><input type="text" id="pin0" placeholder="Enter your Name">
-   
-                <br/>  
-                                      <label>Mode of Payment:</label>
-                                      <br/>   
-                                       <input type="radio" name="card" id="Credit" value="Credit-Card" checked>Credit-Card<br/>
-                                       <input type="radio" name="card" id="Debit" value="Debit-Card" >Debit-Card<br/>
-                                       <input type="radio" name="card" id="Net" value="Net-Banking">Net-Banking <br/>
 
-                <label id="change">Credit-Card Number:</label> <input type="text" class="enter" id="pin1" placeholder="Enter Credit Card Number">    <br/>
-                <label>CVV:</label> <input type="password" class="enter" id="pin2" placeholder="Enter CVV">  <br/>
-                <label>Total Cost(With Added Tax)</label> <input type="text" class="enter" id="display"><br/>                             
-    </div>
-    <button id="sub-mit">Submit</button>
-    </div>
-</div>
 <div id="container">
   
     
@@ -141,6 +123,28 @@
     </div>
 </div>
 <button id="submit">Proceed to Pay</button>
+<div class="modal-bg">
+    <div class="modal">
+        <span>X</span>
+        <div>
+           
+             <label>Name:</label><input type="text" id="pin0" placeholder="Enter your Name">
+   
+                <br/>  
+                                      <label>Mode of Payment:</label>
+                                      <br/>   
+                                       <input type="radio" name="card" id="Credit" value="Credit-Card" checked>Credit-Card<br/>
+                                       <input type="radio" name="card" id="Debit" value="Debit-Card" >Debit-Card<br/>
+                                       <input type="radio" name="card" id="Net" value="Net-Banking">Net-Banking <br/>
+
+                <label id="change">Credit-Card Number:</label> <input type="text" class="enter" id="pin1" placeholder="Enter Credit Card Number">    <br/>
+                <label>CVV:</label> <input type="password" class="enter" id="pin2" placeholder="Enter CVV">  <br/>
+                <label>Total Cost(With Added Tax)</label> <input type="text" class="enter" id="display" readonly><br/>                             
+    </div>
+    <button id="sub-mit">Submit</button>
+   
+    </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>

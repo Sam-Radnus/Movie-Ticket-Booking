@@ -105,13 +105,16 @@ $('input[type="radio"]').on('change',function()
      y.html(x+" Number");
      $('input[id="pin1"]').attr("placeholder","Enter "+x+" Number");
 });
+let x=document.querySelector('.modal-bg');
 $('button[id="submit"]').on('click',function(e)
 {
-     e.preventDefault();
-    
-    console.log($('div[class="modal"]'));
-    $('body').css("background-color","black"); 
-    $('body').css("opacity","0.5"); 
-    $('div[class="modal"]').css("visibility","visible");
-
+     let price2=document.querySelector('label[id="price"]');
+     let displayVal=document.querySelector('input[id="display"]');
+     displayVal.value=price2.innerHTML;
+     x.classList.add("active");
+});
+$('span').on('click',function()
+{
+     
+     x.classList.remove("active");
 });
