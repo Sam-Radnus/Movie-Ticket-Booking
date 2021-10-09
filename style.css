@@ -159,7 +159,7 @@ div[class="seat selected"]:hover
     font-weight: 1000;
     cursor:default;
 }
-div[id="select movie"],div[id="guide"]{
+div[id="select movie"],div[id="guide"],div[class="modal"]{
     margin: 20px;
     margin-left:33vw;
     margin-right:33vw;
@@ -171,12 +171,47 @@ div[id="select movie"],div[id="guide"]{
     background-color: rgb(21, 10, 10);   
     font-weight: bolder;
 }
+div[class="modal"]
+{
+    position: relative;
+    margin: 20px;
+    margin-left:33vw;
+    margin-right:33vw;
+    /* border-color: black; */
+    /* border-style:solid; */
+    padding:25px;
+    border-radius: 15px;
+    color:white;
+    background-color: rgb(211, 18, 18);   
+    font-weight: bolder;   
+    width: 35vw;
+}
+input[class="enter"]
+{
+    margin-top:10px;
+}
+input[id="pin1"]
+{
+    margin-left:50px;
+}
+input[id="pin2"]
+{
+    margin-left:180px;
+}
+input[id="pin0"]
+{
+    margin-left:170px;
+}
 div[id="guide"]
 {
     display: flex;
     padding:15px;
     margin-right:40vw;
     margin-left:40vw;
+}
+input[name="card"]
+{
+    margin-left:225px;
 }
 div[id="guide"]:hover
 {
@@ -208,4 +243,69 @@ small{
 }
 select:hover{
     cursor: pointer;
+}
+button[id="sub-mit"]
+{
+    background-color: black;
+    color:whitesmoke;
+    height:50px;
+    width:90px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-style:solid;
+    border-color:white;
+    margin-top:12px;
+    margin-left:25vw;
+}
+button[id="sub-mit"]:hover
+{
+    background-color:white;
+    color:black;
+    border-color:blueviolet;
+    cursor:pointer;
+}
+span{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-weight: bold;
+}
+span:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    color:rosybrown;
+}
+div[class="modal-bg"]
+{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition : visibility 0s , opacity 0.5s;
+
+}
+div[class="modal-bg active"]
+{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition : visibility 0s , opacity 0.5s;
+    visibility:visible;
+    opacity: 1;
+
+    
 }
